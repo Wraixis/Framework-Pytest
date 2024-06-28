@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="0.063" timestamp="2024-05-14T13:39:36.887030" hostname="DESKTOP-BP30S1M">
+		<testcase classname="unit_tests.test_first_method" name="test_is_positive[1-True]" time="0.001" />
+		<testcase classname="unit_tests.test_first_method" name="test_is_positive[-2-False]" time="0.001" />
+		<testcase classname="unit_tests.test_first_method" name="test_is_positive[0-False]" time="0.000" />
+		<testcase classname="unit_tests.test_first_method" name="test_is_positive[4-False]" time="0.001">
+			<failure message="assert True == False&#10; +  where True = &lt;function Utilities.is_positive at 0x00000141E92F96C0&gt;(4)&#10; +    where &lt;function Utilities.is_positive at 0x00000141E92F96C0&gt; = Utilities.is_positive">
+				number = 4, expected = False
+				
+				@pytest.mark.parametrize('number, expected', [
+				(1, True),
+				(-2, False),
+				(0, False),
+				(4, False)
+				])
+				def test_is_positive(number, expected):
+				&gt;       assert Utilities.is_positive(number) == expected
+				E       assert True == False
+				E        +  where True = &lt;function Utilities.is_positive at 0x00000141E92F96C0&gt;(4)
+				E        +    where &lt;function Utilities.is_positive at 0x00000141E92F96C0&gt; = Utilities.is_positive
+				
+				unit_tests\test_first_method.py:12: AssertionError
+			</failure>
+		</testcase>
+	</testsuite>
+</testsuites>
