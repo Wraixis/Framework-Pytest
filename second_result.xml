@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testsuite name="pytest" errors="0" failures="0" skipped="0" tests="4" time="0.031" timestamp="2024-05-14T13:41:15.255460" hostname="DESKTOP-BP30S1M">
+		<testcase classname="unit_tests.test_second_method" name="test_largest_between_thirty_and_ninty" time="0.001" />
+		<testcase classname="unit_tests.test_second_method" name="test_largest_consists_of_two_digits" time="0.001" />
+		<testcase classname="unit_tests.test_second_method" name="test_largest_is_integer" time="0.000" />
+		<testcase classname="unit_tests.test_second_method" name="test_largest_is_not_integer_with_empty_list" time="0.000" />
+	</testsuite>
+</testsuites>
